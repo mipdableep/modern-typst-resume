@@ -161,17 +161,27 @@
   task-description: "",
   date-from: "Present",
   date-to: "Present",
-  label: "Courses",
+  label: "",
   theme: default-theme) = [
-  #text(size: text-size.large)[*#title*]\
-  #subtitle\
-  #text(style: "italic")[
-    #text(theme.accentColor)[#date-from - #date-to]\
+    #text(size: text-size.large)[*#title*]\
+    #subtitle\
+    #text(style: "italic")[
+      #if date-from != "" [
+        #if date-to != "" [
+          #text(theme.accentColor)[#date-from - #date-to]\
+        ]
+        #if date-to == "" [
+          #text(theme.accentColor)[#date-from)\
+        ]
+      ]
+    ]
     #if facility-description != "" [
       #set text(theme.textSecondary)
       #facility-description\
     ]
-    #text(theme.accentColor)[#label]\
+    #if label != "" [
+      #text(theme.accentColor)[#label]\
+    ]
   ]
   #task-description
 ]

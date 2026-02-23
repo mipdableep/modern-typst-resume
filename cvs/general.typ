@@ -1,8 +1,7 @@
-#import "../lib.typ": modern-resume, experience, project, pill, default-theme
+#import "../lib.typ": modern-resume, experience, project, pill
 
-// Create a custom theme based on the config.yaml
 #let custom-theme = (
-  primary: rgb("#ffc0cb"),
+  primary: rgb("#313C4E"),
   secondary: rgb("#222A33"),
   accentColor: rgb("#449399"),
   textPrimary: rgb("#000000"),
@@ -11,17 +10,16 @@
 )
 
 #show: modern-resume.with(
-  author: "John Doe",
-  job-title: "Data Scientist",
-  bio: lorem(5),
-  avatar: image("avatar.png"),
+  author: "Ido Talmor",
+  job-title: "Software Engineer, Computer Vision Researcher",
+  bio: "Software Engineer, well versed in low level development and optimization.
+Experienced with Backend-Dev, Robotics, Computer Vision, Embedded, and more" ,
   contact-options: (
-    email: link("mailto:john.doe@gmail.com")[john.doe\@gmail.com],
-    mobile: "+43 1234 5678",
-    location: "Austria",
-    linkedin: link("https://www.linkedin.com/in/jdoe")[linkedin/jdoe],
-    github: link("https://github.com/jdoe")[github.com/jdoe],
-    website: link("https://jdoe.dev")[jdoe.dev],
+    email: link("ifw.talmor@gmail.com")[ifw.talmor\@gmail.com],
+    mobile: "+972 54 221 5440",
+    location: "Haifa, Israel",
+    linkedin: link("https://www.linkedin.com/in/ido-talmor-a2a168299/")[linkedin/Ido-Talmor],
+    github: link("https://github.com/mipdableep")[github.com/Ido-Talmor],
   ),
   theme: custom-theme,
 )
@@ -29,40 +27,26 @@
 == Education
 
 #experience(
-  title: "Master's degree",
-  subtitle: "University of Sciences",
-  task-description: [
-    - Short summary of the most important courses
-    - Explanation of master thesis topic
-  ],
-  date-from: "10/2021",
-  date-to: "07/2023",
-  label: "Courses",
+  title: "Computer-Science Bachelor's degree",
+  subtitle: "Open University",
+  date-from: "03/2024",
+  date-to: "01/2027 (estimated)",
+  label: "GPA - 89",
   theme: custom-theme,
 )
 
-#experience(
-  title: "Bachelor's degree",
-  subtitle: "University of Sciences",
-  task-description: [
-    - Short summary of the most important courses
-    - Explanation of bachelor thesis topic
-  ],
-  date-from: "09/2018",
-  date-to: "07/2021",
-  label: "Courses",
-  theme: custom-theme,
-)
+=== Publications
 
 #experience(
-  title: "College for Science",
-  subtitle: "College of XY",
+  title: link("https://arxiv.org/abs/2312.13385")[ORBSLAM3-Enhanced Autonomous Drones: Pioneering Indoor Exploration],
+  subtitle: "Rbd-Labs, with Dr. M. Tukan, L. Mualem, Prf D. Feldman",
   task-description: [
-    - Short summary of the most important courses
+    - algorithmic design
+    - software design and implementation
   ],
-  date-from: "09/2018",
-  date-to: "07/2021",
-  label: "Courses",
+  label: "Roles:",
+  date-from: "",
+  date-to: "",
   theme: custom-theme,
 )
 
