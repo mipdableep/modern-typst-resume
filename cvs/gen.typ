@@ -55,8 +55,6 @@ Experienced with Backend-Dev, Robotics, Computer Vision, Embedded, and more" ,
     - software design and implementation
   ],
   label: "Roles:",
-  date-from: "",
-  date-to: "",
   theme: custom-theme,
 )
 
@@ -68,7 +66,7 @@ Experienced with Backend-Dev, Robotics, Computer Vision, Embedded, and more" ,
   task-description: [
     - Developed real-time systems using computer vision, SLAM systems, and spatial navigation algorithms
     - Developed a lightweight indoor navigation system for weak IoT devices
-    - Co-developed a solution for landing, recharging, and management of autonomous drones
+    - developed a solution for landing, recharging, and management of autonomous drones
     - Collaborated with IAI on a large-scale project regarding swarm systems and control
   ],
   date-from: "2022",

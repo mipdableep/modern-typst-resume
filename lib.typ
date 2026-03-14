@@ -159,8 +159,8 @@
   subtitle: "",
   facility-description: "",
   task-description: "",
-  date-from: "Present",
-  date-to: "Present",
+  date-from: "",
+  date-to: "",
   label: "",
   theme: default-theme) = [
     #text(size: text-size.large)[*#title*]\
